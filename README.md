@@ -1,3 +1,4 @@
 # Code-Louisville-Project
 
-Hello there, this is an even better test.
+Hello This is my project for code Louisville, if you have any questions please email me at Josephshawxx@gmail.com. 
+Please have mongo installed and use the the provided compressed database to see how everything works. WOOP
