@@ -3,7 +3,7 @@ var app = angular.module('project', []);
 
 //GET FOR MUFFINS
 app.controller('muffins', function ($scope, $http) {
-    $http.get('/recipelist')
+    $http.get('/recipelist/muffins')
     .success(function(response) {
             $scope.recipelist = response;
             console.log('GET RECIVED!');
@@ -13,7 +13,7 @@ app.controller('muffins', function ($scope, $http) {
 
 //GET FOR CHILLI
 app.controller('chilli', function ($scope, $http) {
-    $http.get('/recipelist')
+    $http.get('/recipelist/chilli')
     .success(function(response) {
             $scope.recipelist = response;
             console.log('GET RECIVED!');

@@ -17,20 +17,28 @@
         </div>  
 
         
-<!--
         <div ng-controller="chilli">
             <h3>Chilli</h3>
                 <button ng-click="showStuff = ! showStuff">Chilli</button>
-                    <div class="dataDisplay" ng-show="showStuff" ng-include="'partials/Recipe Display.html'"></div> 
+                    <div class="dataDisplay" ng-show="showStuff">
+                        <ul>
+                        <li ng-repeat='ing in recipelist.chilli'>{{ing.ing}}</li>
+                        </ul> 
+                        <p ng-repeat="dir in recipelist.chilli">{{dir.dir}}</p>
+                    </div>  
         </div>    
     
     
         <div ng-controller="muffins">
             <h3>Muffins</h3>
                 <button ng-click="showStuff = ! showStuff">Muffins</button>
-                    <div class="dataDisplay" ng-show="showStuff" ng-include="'partials/Recipe Display.html'"></div> 
+                    <div class="dataDisplay" ng-show="showStuff">
+                        <ul>
+                        <li ng-repeat='ing in recipelist.muffins'>{{ing.ing}}</li>
+                        </ul> 
+                        <p ng-repeat="dir in recipelist.muffins">{{dir.dir}}</p>
+                    </div>  
         </div>    
--->
 <!--JS Files------------------------------------------->    
     <script src="angular.min.js"></script>
     <script src="controller.js"></script>
