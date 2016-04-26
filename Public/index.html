@@ -3,21 +3,22 @@
 <html ng-app='project'>
     <head>
         <title>Amanda's Famous Recipes</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     
     
 <body>
     <h1>Welcome to Amanda's Famous Recipes</h1>
-        <p>Recipes include a detailed shopping list app that helps you sort out what you need to complete the recipe    as well expert directions to create beautiful and tastey dishes for you and your family. Happy Cooking!</p>    
+        <p class="titleText">Recipes include a detailed shopping list app that helps you sort out what you need to complete the recipe    as well expert directions to create beautiful and tastey dishes for you and your family. Happy Cooking!</p>    
 
-        <div ng-controller="ench">
+        <div  class="foodName" ng-controller="ench">
             <h2>Enchiladas</h2>
                 <button ng-click="showStuff = ! showStuff">Enchiladas</button>
                     <div class="dataDisplay" ng-show="showStuff" ng-include="'partials/Recipe Display.html'"></div> 
         </div>  
 
         
-        <div ng-controller="chilli">
+        <div  class="foodName" ng-controller="chilli">
             <h3>Chilli</h3>
                 <button ng-click="showStuff = ! showStuff">Chilli</button>
                     <div class="dataDisplay" ng-show="showStuff">
@@ -29,9 +30,9 @@
         </div>    
     
     
-        <div ng-controller="muffins">
+        <div class="foodName" ng-controller="muffins">
             <h3>Muffins</h3>
-                <button ng-click="showStuff = ! showStuff">Muffins</button>
+                <button class="btn" ng-click="showStuff = ! showStuff">Muffins</button>
                     <div class="dataDisplay" ng-show="showStuff">
                         <ul>
                         <li ng-repeat='ing in recipelist.muffins'>{{ing.ing}}</li>

@@ -1,0 +1,30 @@
+body {
+    background-color: dodgerblue;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    text-decoration: underline;
+}
+
+.titleText {
+    text-align: center;
+    color: gold;
+    
+} 
+
+.dataDisplay {
+    text-align: center;
+     color: gold;
+    
+} 
+
+.foodName {
+    text-align: center;
+    color: gold;
+} 
+
+.btn {
+    text-align: center
+} 
